@@ -1,6 +1,71 @@
+*/conectar repositorio/*
+crear repositorio en github
+
+git init
+git add .
+git status
+git commit -m"initial commit"
+codigo del repositorio
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 ls
 npm install gulp gulp-cli browser-sync
 npm init -y 
 npm install --save.dev gulp
-/*creat gulpfile.js*/
-/*creat .gitignore y dentro escribir node_modules
+
+/*creat gulpfile.js*/ y poner dentro este codigo:
+
+---------------------------------------------------------
+
+var gulp = require('gulp');
+var browserSync = require('browser-sync').create();
+var reload = browserSync.reload;
+
+gulp.task('serve', function() {
+  browserSync.init({
+    server: {
+      baseDir: "./"
+    }
+  });
+
+  gulp.watch("*.html").on("change", reload);
+});
+-----------------------------------------------------------------------------
+
+/*creat .gitignore y dentro escribir :
+------------------------------------------------------------------------------
+node_modules
+------------------------------------------------------------------------------
+
+ls
+gulp serve
+------------------------------------------------------------fin---------------ya estas conectado al localhost------------------------------------------------
+/* para  detener y conectar a gihub/*
+ctrl c
+git status
+git add .
+git commit -m "installed gulp for task running"
