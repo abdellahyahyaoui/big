@@ -1,0 +1,6 @@
+ls
+npm install gulp gulp-cli browser-sync
+npm init -y 
+npm install --save.dev gulp
+/*creat gulpfile.js*/
+/*creat .gitignore y dentro escribir node_modules
